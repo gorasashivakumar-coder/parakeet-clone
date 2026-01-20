@@ -251,6 +251,24 @@ function App() {
         </div>
       )}
 
+      {/* Security Context Warning for Remote Access */}
+      {!window.isSecureContext && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1' && (
+        <div className="z-50 max-w-2xl w-full mb-6 bg-yellow-500/10 border border-yellow-500/50 rounded-lg p-4 backdrop-blur-sm">
+          <div className="flex items-start gap-3">
+            <div className="text-2xl">⚠️</div>
+            <div className="text-left text-sm text-yellow-200">
+              <p className="font-bold mb-1">Microphone Access Blocked</p>
+              <p>Browsers block the microphone on insecure (HTTP) connections.</p>
+              <p className="mt-2 text-yellow-400 font-mono text-xs">
+                To fix this on Mobile/Remote:<br />
+                1. Use HTTPS (e.g. Ngrok, Certbot)<br />
+                2. OR Enable <span className="underline select-all">chrome://flags/#unsafely-treat-insecure-origin-as-secure</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
       {!isInvisible && (
         <div className="z-10 text-center space-y-8 max-w-2xl w-full">
           <h1 className="text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 drop-shadow-sm">
