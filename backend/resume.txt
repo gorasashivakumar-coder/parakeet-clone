@@ -1,0 +1,39 @@
+Shiva Kumar Gorasa
+📞 +91-7893553778 | ✉️ gorasashivakumar@gmail.com 📍 Hyderabad, India | 🌐 LinkedIn
+Professional Summary
+Cloud Support Engineer with 3+ years of hands-on experience supporting large-scale cloud environments, specializing in Google Cloud Platform and AWS services. Proven success in troubleshooting compute, serverless, storage, networking, and database issues while meeting SLOs. Strong customer-first mindset with experience collaborating with engineering teams to drive root cause analysis (RCA) and permanent fixes. Skilled in Python, SQL, DevOps tools, and distributed system fundamentals.
+
+Technical Skills
+Cloud Platforms: Google Cloud Platform (Compute Engine, Cloud Storage, IAM, VPC, Cloud SQL, Cloud Functions), AWS
+Serverless / Dev Tools: Cloud Functions, Cloud Run, Cloud Build, Lambda, CI/CD pipelines
+Scripting & Programming: Python, Bash, SQL
+Networking: TCP/IP, DNS, HTTP(S), Load Balancers, Firewalls, VPN
+Databases: MySQL, PostgreSQL, Cloud SQL; Basic NoSQL understanding
+Monitoring & Debugging: Stackdriver (Cloud Operations Suite), Prometheus, Grafana, CloudWatch
+Containers: Docker, Kubernetes
+IAM & Security: Access control, RBAC, Key management
+IaC & Automation: Terraform, CloudFormation
+Version Control: Git, GitHub
+OS: Linux (Ubuntu, Amazon Linux), Windows Server
+
+Certifications
+• AWS Cloud Practitioner
+• AWS Solutions Architect – Associate (Cloud Quest credentials)
+
+Professional Experience
+Cloud Support Associate – Amazon Development Center
+Hyderabad, India | May 2021 – Present
+• Delivered high-touch technical support for enterprise cloud customers while maintaining strong CSAT scores.
+• Troubleshot incidents across serverless, compute, networking, and storage services with timely resolutions.
+• Performed log analysis, packet capture and debugging to drive RCA and provide detailed RCA documentation.
+• Filed product bug reports with reproducible steps and validated proposed engineering fixes.
+• Automated diagnostic data collection using Python & Bash improving issue identification time by 20%.
+• Supported escalations and contributed knowledge base improvements for internal efficiency.
+• Troubleshot IAM permissions, DB access failures, firewall misconfigurations & connectivity issues.
+
+Education
+Bachelor of Technology (B.Tech) – Electrical & Electronics Engineering
+JB Institute of Engineering & Technology | 2013 – 2017
+
+Soft Skills
+Customer Empathy • Clear Communication • Stakeholder Management • Analytical Thinking • Documentation Excellence
