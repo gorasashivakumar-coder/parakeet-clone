@@ -6,6 +6,7 @@ services:
       - "8000:8000"
     volumes:
       - ./backend/transcripts:/app/transcripts
+      - ./backend/resume.txt:/app/resume.txt
     env_file:
       - ./backend/.env
 
