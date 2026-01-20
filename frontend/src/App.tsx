@@ -213,8 +213,9 @@ function App() {
 
   // Connect to WebSocket
   useEffect(() => {
-    // Connect to the backend on the same host as the frontend, port 8000
-    const ws = new WebSocket(`ws://${window.location.hostname}:8000/ws/interview`);
+    // Connect to the backend
+    const wsUrl = import.meta.env.VITE_WS_URL || `ws://${window.location.hostname}:8000/ws/interview`;
+    const ws = new WebSocket(wsUrl);
 
     ws.onopen = () => {
       console.log('Connected to WebSocket');

@@ -15,6 +15,6 @@ services:
     ports:
       - "5173:5173"
     environment:
-      - VITE_BACKEND_URL=http://localhost:8000
+      - VITE_WS_URL=${VITE_WS_URL:-}
     depends_on:
       - backend
