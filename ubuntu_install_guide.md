@@ -10,11 +10,11 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3 python3-pip python3-venv git
 ```
 
-## 2. Install Node.js (Version 18+)
+## 2. Install Node.js (Version 22+)
 We'll use the official NodeSource script to get a recent version of Node.js.
 
 ```bash
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 sudo apt install -y nodejs
 # Verify installation
 node -v
@@ -72,23 +72,28 @@ cd parakeet-clone/frontend
 npm run dev -- --host 0.0.0.0
 ```
 
-**Option B: Background using PM2 (Recommended)**
-Install PM2 to keep apps running even if you disconnect.
+## Option C: Containerized using Docker (Highly Recommended)
+Docker ensures the application runs in the correct environment (Node 22, Python 3.12) regardless of your server's settings.
+
+### 1. Install Docker
 ```bash
-sudo npm install -g pm2
+sudo apt update
+sudo apt install -y docker.io docker-compose
+```
 
-# Start Backend
-cd parakeet-clone/backend
-pm2 start "python3 -m uvicorn main:app --host 0.0.0.0 --port 8000" --name backend
+### 2. Run with Docker Compose
+```bash
+cd ~/parakeet-clone
+# Stop any host processes first
+pm2 stop all 2>/dev/null 
 
-# Start Frontend
-cd ../frontend
-pm2 start "npm run dev -- --host 0.0.0.0" --name frontend
+# Build and start
+sudo docker-compose up --build -d
+```
 
-# Check status
-pm2 status
-# View logs
-pm2 logs
+### 3. Check Logs
+```bash
+sudo docker-compose logs -f
 ```
 
 ## 7. Accessing the App
