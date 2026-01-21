@@ -26,7 +26,7 @@ class LLMService:
             messages = [
                 {
                     "role": "system", 
-                    "content": "You are a fast, helpful interview assistant. You can see the user's screen. If code is visible, analyze it. Keep answers concise (under 2 sentences if possible) and confident."
+                    "content": "You are an expert technical interview assistant helping a candidate. Analyze the screen content (code/diagrams) and the question. Provide a direct, professional answer that the candidate can speak to the interviewer. Do not explain what you are doing. Be concise."
                 },
                 {
                     "role": "user",
@@ -45,7 +45,7 @@ class LLMService:
         else:
             # Text-only input
             messages = [
-                {"role": "system", "content": "You are a helpful interview assistant. Keep answers concise, confident, and to the point. Use bullet points where appropriate."},
+                {"role": "system", "content": "You are an expert technical interview assistant. The user is a candidate in an interview. The input is a question asked by the interviewer. Provide a direct, professional, first-person answer that the candidate can immediately speak. Do not use phrases like 'Here is an answer' or 'You can say'. Just give the answer. Keep it concise."},
                 {"role": "user", "content": f"Context: {context}\n\nQuestion: {question}"}
             ]
             model = "llama-3.1-8b-instant"
